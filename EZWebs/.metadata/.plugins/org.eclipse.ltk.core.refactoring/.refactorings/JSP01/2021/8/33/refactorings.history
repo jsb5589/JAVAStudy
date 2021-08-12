@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JSP01/src/main/webapp/elloinclude.jsp&apos; to &apos;helloinclude.jsp&apos;" description="Rename resource &apos;elloinclude.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/elloinclude.jsp" name="helloinclude.jsp" stamp="1628480542239" updateReferences="true"/>
+</session>

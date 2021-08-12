@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 1</title>
+</head>
+<body>
+    <script>
+        document.write("<table width='50px' height='50px' border='1' text-align: right>");
+
+        for(var i=0; i<9; i++) {
+            for(n=0; n<81; n++){
+            document.write("<tr>");
+                for(var j=0; j<9; j++){
+                    n++
+                    document.write("<td>" + n + "</td>");
+            }
+            document.write("<tr>");
+        }
+    }
+        document.write("</table>");
+    </script>
+</body>
+</html>
