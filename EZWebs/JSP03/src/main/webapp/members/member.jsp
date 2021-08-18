@@ -15,8 +15,8 @@
 	memberDBCP.addMember(member);
 	
 	List<MemberVO> memberList = memberDBCP.getMembers();
-%>
-
+%>    
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,22 +31,23 @@
 			<td>비밀번호</td>
 			<td>이메일</td>
 			<td>등록일자</td>
-		</tr>
-		
-<%
-		for(int cnt=0; cnt < memberList.size(); cnt++)	{
-			MemberVO mem = (MemberVO)memberList.get(cnt);
-%>
 		<tr>
-			<td><%=mem.getMid()%></td>
-			<td><%=mem.getMname()%></td>
-			<td><%=mem.getPwd()%></td>
-			<td><%=mem.getEmail()%></td>
-			<td><%=mem.getRegdate()%></td>
-		</tr>
+		
+<%	
+		for(int cnt=0; cnt < memberList.size(); cnt++) {
+			MemberVO mem = (MemberVO)memberList.get(cnt);
+%>		
+			<tr>
+				<td><%=mem.getMid()%></td>
+				<td><%=mem.getMname()%></td>
+				<td><%=mem.getPwd()%></td>
+				<td><%=mem.getEmail()%></td>
+				<td><%=mem.getRegdate()%></td>
+			</tr>
 <%
 		}
-%>
+%>		
 	</table>
+
 </body>
 </html>

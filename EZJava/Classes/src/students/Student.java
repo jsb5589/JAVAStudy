@@ -14,7 +14,7 @@ class Student { // Á¤ÀÇ(definition)
 	boolean tf;
 	
 	public static void main(String[] args) {
-		Student student = new Student(true);
+		Student student = new Student();
 		student.printInfo();
 	}
 	

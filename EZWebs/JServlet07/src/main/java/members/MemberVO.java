@@ -1,6 +1,4 @@
 /*
-   
-/*
  * MemberVO Value Object
  */
 package members;

@@ -1,5 +1,4 @@
 /*
- /*
  * http://localhost:8090/JServlet06/memberview
  */
 package members;
@@ -83,4 +82,5 @@ public class MemberView extends HttpServlet {
 		out.print("<a href='/JServlet06/memberlist.html'>멤버등록</a>");
 		out.print("</body></html>");
 	}
+
 }

@@ -13,7 +13,9 @@
 </body>
 <%
 	request.setCharacterEncoding("utf-8");
+
 	MemberDBCP memberDBCP = new MemberDBCP();
+
 	String command = request.getParameter("command");
 	if(command != null) {
 		

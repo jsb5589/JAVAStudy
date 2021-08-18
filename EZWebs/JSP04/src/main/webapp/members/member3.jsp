@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	import="members.*"
-    pageEncoding="UTF-8" isELIgnored="false"%>
-
+    pageEncoding="UTF-8" isELIgnored="false" %>
+    
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
 
-<jsp:useBean id="member" class="members.MemberVO"/>
-<jsp:setProperty name="member" property="*"/>
-
+<jsp:useBean id="member" class="members.MemberVO" />
+<jsp:setProperty name="member" property="*" />
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +17,7 @@
 </head>
 <body>
 	<h1>멤버 등록 확인</h1>
-	<h3>Expression Language - userBean</h3>
+	<h3>Expression Language - useBean</h3>
 	<hr>
 	<table>
 		<tr bgcolor="66aabb">
@@ -25,7 +25,6 @@
 			<td>이름</td>
 			<td>비밀번호</td>
 			<td>이메일</td>
-			<td>주소</td>
 		</tr>
 		<tr>
 			<td><%=member.getMid()%></td>
@@ -34,10 +33,10 @@
 			<td><%=member.getEmail()%></td>
 		</tr>
 		<tr>
-			<td>${param.mid}</td>
-			<td>${param.mname}</td>
-			<td>${param.pwd}</td>
-			<td>${param.email}</td>
+			<td>${member.mid}</td>
+			<td>${member.mname}</td>
+			<td>${member.pwd}</td>
+			<td>${member.email}</td>
 		</tr>
 	</table>
 </body>

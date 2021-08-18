@@ -12,7 +12,9 @@
 </body>
 <%
 	request.setCharacterEncoding("utf-8");
+
 	String mid = request.getParameter("mid");
+
 	MemberDBCP memberDBCP = new MemberDBCP();
 	MemberVO member = memberDBCP.getMember(mid);
 %>

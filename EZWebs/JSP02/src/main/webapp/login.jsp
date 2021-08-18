@@ -6,11 +6,12 @@
 	String userid = request.getParameter("userid");
 	String userpw = request.getParameter("userpw");
 %>
+    
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Login JSP</title>
+	<meta charset="UTF-8">
+	<title>Login JSP</title>
 </head>
 <body>
 	<h1>로그인</h1>

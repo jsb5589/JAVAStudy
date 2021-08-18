@@ -1,6 +1,6 @@
 /*
  * web.xml mapping
- * http://localhost:8090/JServlet01/step01
+ * http://localhost:8090/JServlet01/step02
  */
 package jservlet01.s01;
 
@@ -15,15 +15,15 @@ public class step02 extends HttpServlet {
 	private int count;
 	
 	public void init() throws ServletException {
-		System.out.println("* step01.init()...");
+		System.out.println("* step02.init()...");
 	}
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		System.out.printf("* step01.doGet(%d)\n", ++this.count);
+		System.out.printf("* step02.doGet(%d)\n", ++this.count);
 	}
 	
 	public void destroy() {
-		System.out.println("* step01.destroy()");
+		System.out.println("* step02.destroy()");
 		
 	}
 

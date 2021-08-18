@@ -9,7 +9,7 @@ public class OracleConnector {
 	static final String url = "jdbc:oracle:thin:@localhost:1521:xe";
 	// static final String url = "jdbc:oracle:thin:@localhost:1521:orcl";
 	static final String userid = "SOLUSER";
-	static final String password = "1234";
+	static final String password = "SOLUSER";
 	
 	private static Connection stconn = null;
 	

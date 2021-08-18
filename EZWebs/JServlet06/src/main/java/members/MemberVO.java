@@ -1,5 +1,4 @@
 /*
- /*
  * MemberVO Value Object
  */
 package members;
@@ -52,4 +51,5 @@ public class MemberVO {
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
+
 }

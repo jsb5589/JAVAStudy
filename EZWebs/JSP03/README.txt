@@ -21,4 +21,6 @@
 5. Get 프로퍼티 액션 태그
    - 자바의 getter
    - 첫 글자는 소문자 
-   - <jsp:getProperty>       
+   - <jsp:getProperty>         
+
+

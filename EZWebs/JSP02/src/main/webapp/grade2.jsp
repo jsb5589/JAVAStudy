@@ -7,29 +7,28 @@
 	String scoreResult = "F";
 	if(score >= 90) {
 		scoreResult = "A";
-	} else if(score >= 80) {
+	} else if(score >= 80) {		
 		scoreResult = "B";
-	} else if(score >= 80) {
+	} else if(score >= 70) {		
 		scoreResult = "C";
-	} else if(score >= 80) {
+	} else if(score >= 60) {		
 		scoreResult = "D";
-	} else {
+	} else {		
 		scoreResult = "F";
-	}
-	
-%>
+	}		
+%>    
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Grade JSP</title>
+	<meta charset="UTF-8">
+	<title>Grade JSP</title>
 </head>
 <body>
 	<h1>등급처리</h1>
-	<h3>시험점수: <%=score%></h3>
- 	<hr>
- 	<h4><%=scoreResult%>등급입니다.</h4>
- 	<hr>
- 	<a href="grade.html">등급관리</a>
+	<h3>시험점수:  <%=score%></h3>
+	<hr>
+	<h4><%=scoreResult%>등급입니다.</h4>
+	<hr>
+	<a href="grade.html">등급관리</a>
 </body>
 </html>

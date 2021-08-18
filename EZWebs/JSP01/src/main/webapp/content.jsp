@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Content Page for helloinclude.jsp</title>
+	<meta charset="UTF-8">
+	<title>Content Page for helloinclude.jsp</title>
 </head>
 <body>
-	<img src="images/content.jpg">
+	<img src="images/content.jpg"/>
 </body>
 </html>

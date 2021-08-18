@@ -12,6 +12,7 @@
 </body>
 <%
 	request.setCharacterEncoding("utf-8");
+
 	String userid = request.getParameter("userid");
 	String userpw = request.getParameter("userpw");
 	

@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" isELIgnored="false"%>
-
+    pageEncoding="UTF-8" isELIgnored="false" %>
+    
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
-
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +14,7 @@
 <body>
 	<h1>멤버 등록 확인</h1>
 	<h3>Expression Language - requestScope</h3>
-	<p>표현언어의 내장 객체인 requestScope는 JSP request 기능</p>\
+	<p>표현언어의 내장 객체인 requestScope는 JSP request 기능을 한다.</p>
 	<hr>
 	<table>
 		<tr bgcolor="66aabb">

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +8,13 @@
 </head>
 <body>
 	<h1>Expression Language</h1>
-	<p>논리연산</p>
+	<h3>논리연산</h3>
 	<hr>
 	<p>
 		논리곱(10 == 10 && 10 != 20): ${10 == 10 && 10 != 20} <br>
-		논리합(10 == 10 || 10 != 20): ${10 == 10 || 10 != 20} <br>
-		부정(!(10 != 10) : ${!(10 != 10)}
-	</p>
+		논리합(10 == 10 || 10 != 20): ${10 == 10 || 10 == 20} <br>
+		부정(!(10 != 10) : ${!(10 != 10)} <br>
+	</p>	
+
 </body>
 </html>

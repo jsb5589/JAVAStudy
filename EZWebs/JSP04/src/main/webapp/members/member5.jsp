@@ -1,25 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	import="members.*"
 	import="java.util.*"
-    pageEncoding="UTF-8" isELIgnored="false"%>
-
+    pageEncoding="UTF-8" isELIgnored="false" %>
+    
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
 
-<jsp:useBean id="member" class="members.MemberVO"/>
-<jsp:setProperty name="member" property="*"/>
-<jsp:useBean id="memberList" class="java.util.ArrayList"/>
-<jsp:useBean id="memberMap" class="java.util.HashMap"/>
+<jsp:useBean id="member" class="members.MemberVO" />
+<jsp:setProperty name="member" property="*" />
+<jsp:useBean id="memberList" class="java.util.ArrayList" />
+<jsp:useBean id="memberMap" class="java.util.HashMap" />
 
 <%
-	MemberVO member2 = new MemberVO("3437", "삼사삼사", "3434", "3434@abc.com");
+	MemberVO member2 = new MemberVO("3437", "삼사삼사", "3437", "3437@abc.com");
 	memberList.add(member);
 	memberList.add(member2);
+	
 	
 	memberMap.put("title", "멤버 리스트");
 	memberMap.put("memberList", memberList);
 %>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +40,6 @@
 			<td>이름</td>
 			<td>비밀번호</td>
 			<td>이메일</td>
-			<td>주소</td>
 		</tr>
 		<tr>
 			<td>${memberMap.memberList[0].mid}</td>

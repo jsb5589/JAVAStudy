@@ -1,15 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+    
 <%
 	String name = (String)session.getAttribute("name");
+	session.setAttribute("tel", "031-1000-1234");
 %>
- 
+
+    
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>세션 처리</title>
+	<title>Session</title>
 </head>
 <body>
 	<h1>세션 처리</h1>
